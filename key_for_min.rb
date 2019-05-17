@@ -25,7 +25,7 @@ def key_for_min_value(name_hash)
   i = 0
   z = 1
   for z in 1:values.size 
-    if values[i] < array [z]
+    if values[i] < array[z]
       i  
     else 
       i = z
