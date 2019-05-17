@@ -3,25 +3,28 @@
  
 
 def key_for_min_value(name_hash)
-  values = []
-  
-  name_hash.collect do |key, value|
-    values.push(value)
-  end 
-  
-  i = 0
-  z = 1
-  for z in 1..values.size do 
-    if values[i] < values[z]
-      i  
-    else 
-      i = z
+  if name_hash == {}
+    return nil 
+  else 
+    values = []
+    
+    name_hash.collect do |key, value|
+      values.push(value)
     end 
-  end
-  
-  name_hash.collect do |key, value|
-    if value = i
-      return key 
+    
+    i = 0
+    z = 1
+    for z in 1..values.size do 
+      if values[i] < values[z]
+        i  
+      else 
+        i = z
+      end 
+    end
+    
+    name_hash.collect do |key, value|
+      if value = i
+        return key 
+      end 
     end 
-  end 
 end
