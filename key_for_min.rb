@@ -13,8 +13,19 @@ for z in 1:array.size
     i  
   else 
     i = z
+ 
 
 def key_for_min_value(name_hash)
+  values = []
   name_hash.collect do |key, value|
-    value  
+    values.push(value)
+  end 
+  i = 0
+  z = 1
+  for z in 1:values.size 
+    if values[i] < array [z]
+      i  
+    else 
+      i = z
+  
 end
