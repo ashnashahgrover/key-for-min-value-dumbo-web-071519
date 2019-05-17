@@ -4,10 +4,6 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-  if name_hash == {}
-    return nil 
-    
-  else 
     values = []
     
     name_hash.collect do |key, value|
@@ -31,7 +27,6 @@ def key_for_min_value(name_hash)
         return key 
       end 
     end 
-  end 
 end
 
 hash = {:blake => 500, :ashley => 2, :adam => 1}
