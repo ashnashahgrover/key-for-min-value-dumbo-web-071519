@@ -11,7 +11,7 @@ def key_for_min_value(name_hash)
   
   i = 0
   z = 1
-  for z in 1:values.size 
+  for z in 1..values.size
     if values[i] < values[z]
       i  
     else 
