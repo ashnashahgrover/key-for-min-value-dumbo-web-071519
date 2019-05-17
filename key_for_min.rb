@@ -10,7 +10,8 @@ def key_for_min_value(name_hash)
     
     name_hash.collect do |key, value|
       values.push(value)
-    end 
+    end
+    binding.pry
     
     i = 0
     z = 1
