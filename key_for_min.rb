@@ -12,8 +12,7 @@ def key_for_min_value(name_hash)
     name_hash.collect do |key, value|
       values.push(value)
     end
-    binding.pry
-    
+
     i = 0
     z = 1
     for z in 1..values.size do 
@@ -24,6 +23,8 @@ def key_for_min_value(name_hash)
       end 
     end
     
+    binding.pry
+
     name_hash.collect do |key, value|
       if value = i
         return key 
